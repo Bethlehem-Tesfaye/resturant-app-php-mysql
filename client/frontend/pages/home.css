@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 80px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.logout-btn a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logout-btn a:hover {
+  color: #b00;
+}
+.logout-btn a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn a:hover {
+  color: #b00;
+  transform: translateX(4px);
+}
+
+.user-menu:hover .logout-btn {
+  display: block;
+}
+
+.sidebar .nav a {
+  color: #fff;
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+
+.sidebar .nav a.active {
+  background-color: #f4e0c9;
+  color: #000;
+  border-radius: 10px;
+}
+
+.sidebar .nav a:hover {
+  background-color: #f4e0c9;
+  color: #000;
+  border-radius: 10px;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.hero {
+  background: url("../assets/front.jpg") no-repeat center center/cover;
+  display: flex;
+  min-height: 250px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+p {
+  margin: 15px 0 30px;
+  font-size: 1.2em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons a {
+  background: white;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.buttons a:hover {
+  background: #ddd;
+}
+
+.info h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+.even {
+  background: #5e3d30;
+  color: white;
+  border-radius: 25px;
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+}
+
+.odd {
+  background: #9a8877;
+  color: white;
+  border-radius: 25px;
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  background-color: #5e3d30;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.footer h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.footer .contact,
+.footer .social {
+  flex: 1 1 300px;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffcccb;
+}

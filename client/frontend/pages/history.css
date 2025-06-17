@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.824), rgba(0, 0, 0, 0.824)),
+    url("front.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+  }
+
+  
+  .box {
+    max-width: 400px;
+    background: #5E3D30;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+   
+  }
+  .sidebar {
+    width: 80px;
+    background: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    height: 100vh;
+  }
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .nav a {
+    display: block;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .sidebar .nav a:hover {
+    background-color: #f4e0c9;
+    color: #000;
+    border-radius: 10px;
+  }
+  
+  .nav a.active {
+    background: #f4e0c9;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 5px;
+    color: white;
+  }
+  
+  .description {
+    color: #f7eeee;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .order-card {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    background-color: #9a8877;
+    border-radius: 25px;
+  }
+  
+  .order-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+  }
+  
+  .status {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color:#2E7D32
+  }
+  
+  .shipped {
+    color: green;
+  }

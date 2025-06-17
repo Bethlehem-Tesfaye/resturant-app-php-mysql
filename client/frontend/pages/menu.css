@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 80px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.sidebar .logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.user {
+    position: relative;
+    text-align: center;
+}
+.logout-btn {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.logout-btn a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-btn a:hover {
+    color: #b00;
+    transform: translateX(4px);
+}
+
+
+.user:hover .logout-btn {
+    display: block;
+}
+
+.sidebar .nav a {
+    color: #fff;
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+}
+
+.sidebar .nav a.active {
+    background-color: #f4e0c9;
+    color: #000;
+    border-radius: 10px;
+}
+
+.sidebar .nav a:hover {
+    background-color: #f4e0c9;
+    color: #000;
+    border-radius: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.main-content h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 30px;
+}
+
+.food-item {
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.food-item strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.food-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.load-more {
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+

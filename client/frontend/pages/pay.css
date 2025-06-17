@@ -1,0 +1,166 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.824), rgba(0, 0, 0, 0.824)),
+    url("front.jpg") no-repeat center center/cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.payment-box {
+  background: #9a8877;
+  display: flex;
+  /* width: 750px; */
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+}
+
+.left-panel {
+  background: #5e3d30;
+  border-radius: 25px;
+  color: white;
+  padding: 30px;
+  width: 40%;
+}
+
+.plan-box h2 {
+  font-size: 24px;
+}
+
+.badge {
+  background: white;
+  color: black;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.plan-box .small {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.plan-box a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+.summary {
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.summary .total {
+  font-weight: bold;
+}
+
+.right-panel {
+  padding: 30px;
+  width: 60%;
+}
+
+.billing-options {
+  display: flex;
+  gap: 20px;
+}
+.btn {
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+  position: relative;
+}
+
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.or {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.fast-pay {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.fast-pay button {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+.container {
+  display: flex;
+  width: 100%;
+ 
+}
+.sidebar {
+  width: 80px;
+  background: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  height: 100vh;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.nav a {
+  display: block;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.sidebar .nav a:hover {
+  background-color: #f4e0c9;
+  color: #000;
+  border-radius: 10px;
+}
+
+.nav a.active {
+  background: #f4e0c9;
+  color: black;
+  border-radius: 10px;
+}
