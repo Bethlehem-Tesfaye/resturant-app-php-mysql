@@ -14,10 +14,10 @@ The app is built using **HTML, CSS, JavaScript, PHP, and MySQL**.
 ## Deployed URLs
 
 - **Client Side (Customer Interface):**  
-  https://your-client-url.infinityfreeapp.com
+  https://phpresturnatwebapp.infinityfreeapp.com
 
 - **Admin Side (Dashboard & Management):**  
-  https://your-admin-url.infinityfreeapp.com
+  https://phpadminresturantapp.infinityfreeapp.com
 
 ## Admin Login
 
